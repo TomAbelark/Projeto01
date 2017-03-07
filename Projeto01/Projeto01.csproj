@@ -394,12 +394,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\FabricantesController.cs" />
+    <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Contexts\EFContext.cs" />
     <Compile Include="Models\Fabricante.cs" />
+    <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -409,6 +411,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Produtos\Create.cshtml" />
+    <Content Include="Views\Produtos\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
