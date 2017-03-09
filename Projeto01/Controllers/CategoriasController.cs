@@ -1,5 +1,7 @@
-﻿using Projeto01.Models;
+﻿using Projeto01.Contexts;
+using Projeto01.Models;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 namespace Projeto01.Controllers
@@ -70,8 +72,9 @@ Nome = "Desktops"
 
         public ActionResult Details(long id)
         {
-            return View(categorias.Where(
-            m => m.CategoriaId == id).First());
+           
+              return View(categorias.Where( m => m.CategoriaId == id).First());
+         
         }
 
         public ActionResult Delete(long id)

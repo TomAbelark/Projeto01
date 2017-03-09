@@ -11,5 +11,6 @@ namespace Projeto01.Models
         public string Nome { get; set; }
 
         public virtual ICollection<Produto> Produtos { get; set; }
+        
     }
 }
